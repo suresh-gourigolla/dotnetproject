@@ -1,0 +1,29 @@
+{
+	"name": "Eventtrigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Copy_Pipeline",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"SourcePath": "@triggerBody().filepath",
+					"SourceFile": "@triggerBody().fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/container1597/blobs/folderfile",
+			"blobPathEndsWith": ".txt",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/eaa239f1-9ab1-476d-902e-ab863b329af3/resourceGroups/ADFGroup/providers/Microsoft.Storage/storageAccounts/container597",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

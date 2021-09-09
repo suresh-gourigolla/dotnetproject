@@ -1,0 +1,19 @@
+{
+	"name": "Outside_BinaryText",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "folderfile",
+				"container": "container1597"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

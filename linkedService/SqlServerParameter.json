@@ -1,0 +1,17 @@
+{
+	"name": "SqlServerParameter",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"dbName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=suresh.windows.db.net;initial catalog=@{linkedService().dbName};user id=suresh",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkFERlBSQUM1OTdfMWEzMjUyMWUtMTkwYi00YWRkLTgxNDQtN2NmMTVmMzI5Yzg3Ig0KfQ=="
+		}
+	}
+}

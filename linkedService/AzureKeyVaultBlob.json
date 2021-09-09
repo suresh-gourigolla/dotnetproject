@@ -1,0 +1,11 @@
+{
+	"name": "AzureKeyVaultBlob",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://adfkey597.vault.azure.net/"
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"name": "SqlServerInputTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerParameter",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"dbName": {
+					"value": "@dataset().dbName",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"dbName": {
+				"type": "string"
+			},
+			"tbName": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "table name",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().tbName",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

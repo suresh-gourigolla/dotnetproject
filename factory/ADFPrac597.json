@@ -1,0 +1,9 @@
+{
+	"name": "ADFPrac597",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4a57fa38-d0e8-44ba-a227-d10cdf1c1a8a",
+		"tenantId": "a3090c50-3cb5-48a2-90bb-adc5ed2b4bed"
+	}
+}
